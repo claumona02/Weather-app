@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+body {
+  background:url('https://images.unsplash.com/photo-1558486012-817176f84c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdWR8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60');
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow: scroll;
+  height:auto;
+  font-family:'Poppins',sans-serif;
+    
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 28px;
+    
+    background-color: rgba(47, 52, 85, 0.337);
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    color:rgba(246, 237, 246, 0.537);
+    font-family:'Poppins',sans-serif;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input {
+    border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 5px;
+  }
+
+  .search-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color:rgba(246, 237, 246, 0.537);;
+    color: rgba(47, 52, 85, 0.452);
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .weather-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+  .hourly-forecast-container{
+  overflow: auto;
+  white-space: nowrap;
+  background-color: rgba(47, 52, 85, 0.337);
+  }
+  .daily-forecast-container{
+    overflow: auto;
+    white-space: nowrap;
+    background-color: rgba(47, 52, 85, 0.337);
+  }
+  .hourly-forecast-card {
+    width: 100px;
+    padding: 8px;
+    margin: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  }
+
+  .hourly-forecast-card.today {
+    background-color: #2196f3;
+    color: white;
+  }
+
+  .hourly-forecast-card .time {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .hourly-forecast-card .temperature {
+    margin-bottom: 4px;
+  }
+
+  .hourly-forecast-card .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .daily-forecast-card {
+    width: 200px;
+    padding: 8px;
+    margin: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    display: inline-block;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  }
+
+  .daily-forecast-card.today {
+    background-color: #2196f3;
+    color: white;
+  }
+
+  .daily-forecast-card .day-of-week {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .daily-forecast-card .date {
+    margin-bottom: 4px;
+  }
+
+  .daily-forecast-card .time {
+    margin-bottom: 4px;
+  }
+
+  .daily-forecast-card .temperature {
+    margin-bottom: 4px;
+  }
+
+  .daily-forecast-card .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .daily-forecast-card .weather-description {
+    margin-bottom: 4px;
+  }
+
+  .daily-forecast-card .humidity {
+    margin-bottom: 4px;
+  }
+
+  .daily-forecast-card .pressure {
+    margin-bottom: 4px;}
+ 
+.daily-forecast-card .wind-speed {
+margin-bottom: 4px;
+}
+
+.daily-forecast-card .sunrise {
+margin-bottom: 4px;
+}
+
+.daily-forecast-card .sunset {
+margin-bottom: 4px;
+}
+#city_name{
+  font-weight: lighter;
+  font-size: 60px;
+  color: aliceblue;
+}
+
+.currentWeatherCard{
+  right: 0;
+  border: black 2px ;
+  
+}
+
+.current-weather-container{
+
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+  width: 750px;
+ 
+  
+}
+.current-time{
+  font-size: 18px;
+
+}
+@media only screen and (max-width: 768px) {
+
+  .header {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .hourly-forecast-card, .daily-forecast-card {
+    width: calc(50% - 16px);
+    margin: 8px;
+    padding: 8px;
+  }
+
+  .currentWeatherCard{
+    right: 0;
+    border: black 2px;
+    width:100%
+  }
+
+  .current-weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .daily-forecast-card .sunrise, .daily-forecast-card .sunset {
+    display: none;
+  }
+}
